@@ -8,11 +8,12 @@ public class exp2{
         System.out.println("Enter Elements of Array");
         for (int i=0;i<n;i++){
             arr[i]=sc.nextInt();
+        }        
+        for (int i=1;i<n;i++){
+            arr[i]=arr[i]+arr[i-1];
         }
-        int sum=0;
-        for (int i=0;i<n;i++){
-            sum+=arr[i];
-            System.out.println(sum);
-        }
+        for(int i=0;i<n;i++){
+            System.out.print(arr[i]+" ");
+            }
     }
 }
